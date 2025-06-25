@@ -4,9 +4,12 @@
   tasks:
   - name: install nginx latest version
     ansible.builtin.dnf:
-      name: nginx
+      name: 
+      - nginx
+      - mysql
+      - unzip
       state: latest
   - name: start nginx service
     ansible.builtin.service:
       name: nginx
-      state: started
+      state: started    
