@@ -1,0 +1,19 @@
+- name: Data Types
+  hosts: localhost
+  vars:
+    Course: Devops
+    Hours: 120
+    Tools:
+    - AWS
+    - Linux
+    - ansible
+    - Terraform
+    Experience:
+      Devops: 3
+      AWS: 2
+      Docker: 1
+    Real_Project: true
+  tasks:
+  - name: Data Types
+    ansible.builtin.debug:
+      msg: "This Is {{Course}} Course, Learning {{Hours}}hours, And the tools we used are {{Tools}}, And I have an expeirence in {{Experience}}, I have done real time project:{{Real_Project0}}  "
