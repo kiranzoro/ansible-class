@@ -1,0 +1,9 @@
+- name: print variable from var file
+  hosts: localhost
+  become: yes
+  var-files:
+  - var.yaml
+  tasks:
+  - name: to print name
+    ansible.builtin.debug:
+      msg: "Hello this is {{Name}}"
