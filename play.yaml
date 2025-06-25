@@ -1,7 +1,17 @@
 - name: to print message
   hosts: localhost
   become: yes
+  vars:
+    Name: "Kiran"
   tasks:
   - name: Print a message
     ansible.builtin.debug:
-      msg: "Hi this is Kiran"
+      msg: "Hi this is {{Name}}"
+
+
+#Play level
+#taskLevel
+#Inventory
+#Prompt
+#Role-level
+#varfile
