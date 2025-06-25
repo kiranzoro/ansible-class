@@ -5,9 +5,12 @@
   - name: install nginx latest version
     ansible.builtin.dnf:
       name: 
-      - nginx
       - mysql
-      - unzip
+      state: absent
+  - name: install nginx latest version
+    ansible.builtin.dnf:
+      name: 
+      - java-11-openjdk-devel
       state: latest
   - name: start nginx service
     ansible.builtin.service:
