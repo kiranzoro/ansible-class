@@ -1,0 +1,6 @@
+- name: print a variable 
+  hosts: localhost
+  tasks:
+  - name: print a msg
+    ansible.builtin.debug:
+     msg: "This is kiran"
