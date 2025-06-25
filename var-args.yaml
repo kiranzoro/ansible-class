@@ -1,0 +1,6 @@
+- name: Args
+  hosts: localhost
+  tasks:
+  - name: Print a msg
+    ansible.builtin.debug:
+      msg: "This is {{Name}}"
