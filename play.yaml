@@ -5,6 +5,8 @@
     Name: "Kiran"
   tasks:
   - name: Print a message
+    vars:
+      Name: "Sasi"
     ansible.builtin.debug:
       msg: "Hi this is {{Name}}"
 
