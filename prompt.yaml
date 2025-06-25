@@ -1,9 +1,9 @@
 - name: print variable from Prompt
   hosts: localhost
   vars_prompt:
-  -name : USERNAME
-   prompt: Please enter your username
-   private: flase
+  - name : USERNAME
+    prompt: Please enter your username
+    private: flase
   tasks:
   - name: print variable from prompt
     ansible.builtin.debug:
