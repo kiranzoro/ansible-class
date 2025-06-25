@@ -2,8 +2,9 @@
   hosts: localhost
   tasks:
   - name: print names
-    ansible.builtin.debug:
-      msg: "Hello {{item}} "
+    ansible.builtin.dnf:
+     name: {{item}}
+     state: latest
     loop:
     - linux
     - shell
