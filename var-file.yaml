@@ -1,6 +1,5 @@
-- name: print variable from var file
+- name: variables from files
   hosts: localhost
-  become: yes
   var-files:
   - var.yaml
   tasks:
