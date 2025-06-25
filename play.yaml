@@ -1,0 +1,7 @@
+- name: to print message
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Print a message
+    ansible.builtin.debug:
+      msg: "Hi this is Kiran"
