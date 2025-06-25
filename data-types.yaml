@@ -16,4 +16,4 @@
   tasks:
   - name: Data Types
     ansible.builtin.debug:
-      msg: "This Is {{Course}} Course, Learning {{Hours}}hours, And the tools we used are {{Tools}}, And I have an expeirence in {{Experience}}, I have done real time project:{{Real_Project}  "
+      msg: "This Is {{Course}} Course, Learning {{Hours}}hours, And the tools we used are {{Tools}}, And I have an expeirence in {{Experience}}, I have done real time project:{{Real_Project}}  "
